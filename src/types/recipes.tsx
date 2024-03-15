@@ -1,9 +1,4 @@
-export interface RecipeType {
-	name: string;
-	recipes: Recipe[];
-}
-
-export interface Recipe {
+export default interface RecipeType {
 	name: string;
 	type: string;
 	description: string;

@@ -1,3 +1,9 @@
-export default function Header({children}) {
-	return <h1 className={`font-bold  text-2xl pb-3 `}>{children}</h1>;
+import { Heading } from "@radix-ui/themes";
+
+export default function Header({ children }) {
+	return (
+		<Heading as="h1" align={"left"} className={`font-bold pb-3 `}>
+			{children}
+		</Heading>
+	);
 }
